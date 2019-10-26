@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h3>Todo List</h3>
+    <div class="todo-container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="todo-edit">
+        <input type="text" name="todo-item" placeholder="Todo Title..."></input>
+        <button type="submit">Add Todo</button>
+      </div>
+    </div>
+
+    <template>
+      <tr>
+        <td class="completed">
+          <label class="checkbox-list__item">
+            <input class="checkbox_buttons" type="checkbox" event="true" style="display: none;">
+            <div class="checkbox-list__check"></div>
+          </label>
+        </td>
+        <td class="name"></td>
+        <td class="actions">
+          <span class="delete" event="true"></span>
+        </td>
+      </tr>
+    </template>
+
+  </body>
+</html>
